@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    background-color: #1f242d;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-cyan { color: #0ef; }
+.bg-cyan { background-color: #0ef; }
+
+/* Hexagon Design */
+.hexagon-shape {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    transition: 0.3s;
+}
+
+.hexagon-glow {
+    filter: drop-shadow(0 0 10px #0ef);
+}
+
+/* Button Styling */
+.btn-main {
+    background: #0ef;
+    color: #1f242d;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #0ef;
+    transition: 0.3s ease;
+}
+
+.btn-main:hover {
+    box-shadow: none;
+    background: transparent;
+    color: #0ef;
+    border: 2px solid #0ef;
+}
+
+/* Project Hover Layer */
+.project-layer {
+    background: linear-gradient(rgba(0,0,0,0.1), #0ef);
+    transform: translateY(100%);
+    transition: 0.5s ease;
+}
+
+.project-card:hover .project-layer {
+    transform: translateY(0);
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    color: #0ef;
+    transition: 0.5s ease;
+}
+
+.social-icon:hover {
+    background: #0ef;
+    color: #1f242d;
+    box-shadow: 0 0 10px #0ef;
+}
